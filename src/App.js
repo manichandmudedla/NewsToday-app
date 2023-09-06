@@ -2,10 +2,11 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { NewsArticle } from './components/NewsArticle';
-import {Category} from './components/Category'
+import {Category} from './components/Category';
 import { newsCategory } from './components/Resource';
 import { Nopage } from './components/Nopage';
-import{ useState, useEffect} from 'react';
+import React,{ useState, useEffect} from 'react';
+
 function App() {
   const [search,newSearch]=useState('India')
   const [country,setCountry]=useState('in')
@@ -18,9 +19,9 @@ function App() {
     if(!toSearch)setSearch('India');
     else setSearch(search);
   }
-
+//db983a02b3d74b3aaeed49db9cab85c2
   useEffect(()=>{
-    fetch(`https://newsapi.org/v2/everything?q=${toSearch}&language=en&sortBy=popularity&apiKey=db983a02b3d74b3aaeed49db9cab85c2`).then(response=> response.json()).then(data=>{ updateNews(data.articles)}).catch(()=>console.log("somthing went wrong.."));
+    fetch(`https://newsapi.org/v2/everything?q=${toSearch}&language=en&sortBy=publishedAt&apiKey=2abe11e647cd45f0957adc6e0f2db6e4`).then(response=> response.json()).then(data=>{ updateNews(data.articles)}).catch(()=>console.log("somthing went wrong.."));
   },[toSearch])
   
   
