@@ -5,8 +5,8 @@ export function NewsArticle({news}){
     <>
       <div className='grid sm:grid-cols-3 gap-4 p-4'>
         {
-          news && news.map((article)=>{
-            return <Card key={article.title} article={article}/>
+          news && news.map((article,i)=>{
+            return <Card key={article.title+i} article={article}/>
           })
         }
       </div>

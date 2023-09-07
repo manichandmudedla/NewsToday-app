@@ -30,10 +30,10 @@ export function Navbar({search,newSearch,handleSubmit,country,setCountry}){
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
                 </svg>
                 </div>
-                <input type="text" value={search} onChange={(e)=>newSearch(e.target.value)} className="rounded-xl p-1 pl-10 transition duration-1000 w-10 hover:w-[150px]  focus:w-[150px] lg:hover:w-[220px] lg:focus:w-[220px] border border-slate-100 ring-1 ring-blue-300 focus:outline-none focus:ring-blue-500"/>
+                <input id='srch' type="text" value={search} onChange={(e)=>newSearch(e.target.value)} className="rounded-xl p-1 pl-10 transition duration-1000 w-10 hover:w-[150px]  focus:w-[150px] lg:hover:w-[220px] lg:focus:w-[220px] border border-slate-100 ring-1 ring-blue-300 focus:outline-none focus:ring-blue-500"/>
             </div>
             <button className='rounded-2xl ring-2  w-16  ring-blue-200 hover:ring-violet-400 font-mono bg-blue-100 hover:bg-violet-200 p-1 text-sm mx-2' type='submit' onClick={()=>navigate('/')}>search</button>
-            <select className="rounded w-16 text-xs" value={country} onChange={(e)=> setCountry(e.target.value)}>
+            <select id='cnry' className="rounded w-16 text-xs" value={country} onChange={(e)=> setCountry(e.target.value)}>
                 {
                     countryCodes.map((code)=>{
                         return(
@@ -44,7 +44,7 @@ export function Navbar({search,newSearch,handleSubmit,country,setCountry}){
             </select>
         </form>
         
-        <svg onClick={()=>setToggle(!toggle)}  class=" block h-6 w-6 absolute right-0 top-3 md:collapse m-2" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" ariaHidden="true">
+        <svg onClick={()=>setToggle(!toggle)}  className="block h-6 w-6 absolute right-0 top-3 md:collapse m-2" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
           
