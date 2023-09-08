@@ -5,6 +5,7 @@ import { NewsArticle } from './components/NewsArticle';
 import {Category} from './components/Category';
 import { newsCategory } from './components/Resource';
 import { Nopage } from './components/Nopage';
+import Footer from './components/Footer';
 import { useState, useEffect} from 'react';
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   console.log("app rendered");
 
   return(
-    
+    <div className='flex flex-col min-h-screen'>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Navbar country={country} setCountry={setCountry} toSearch={toSearch} setSearch={setSearch}/>}>
@@ -41,6 +42,8 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    <Footer/>
+    </div>
   )
 }
 

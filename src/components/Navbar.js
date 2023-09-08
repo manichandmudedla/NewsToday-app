@@ -14,10 +14,10 @@ export function Navbar({country,setCountry,toSearch,setSearch}){
       }
     return(
         <>
-        <nav className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 block sticky top-0 overflow-hidden">
-            <div className="text-2xl items-center font-bold p-4 flex"><span className="p-2 text-sm sm:text-2xl bg-orange-400">News</span><span className="p-2 text-sm sm:text-2xl text-white bg-violet-500">Today</span></div>
-            <h1 className="text-2xl font-bold hidden lg:block absolute top-5 left-[280px]">News Today -<span className="text-sm"> Your Daily Source for Informed Insights</span> </h1>
-            <ul id='navbar-default' hidden={toggle} className='font-medium md:visible md:flex md:justify-center md:space-x-3 overflow-hidden  p-3 text-md'>
+        <nav className="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 block sticky top-0 mb-3 overflow-hidden">
+            <div className="text-2xl items-center font-bold p-4 mb-0 flex"><span className="p-2 text-sm sm:text-2xl bg-orange-400">News</span><span className="p-2 text-sm sm:text-2xl text-white bg-violet-500">Today</span></div>
+            <h1 className="text-4xl font-serif font-bold hidden lg:block absolute top-5 left-[260px]">News Today -<span className="text-sm"> Your Daily Source for Informed Insights</span> </h1>
+            <ul id='navbar-default' hidden={toggle} className='font-medium md:visible md:flex md:justify-center md:space-x-3 overflow-hidden  pb-1 text-md'>
             <li className='block p-2 hover:bg-purple-500 text-white' key='home'>
                 <Link to="/">Home</Link>
             </li>
