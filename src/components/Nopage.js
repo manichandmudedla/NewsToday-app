@@ -1,5 +1,5 @@
 export function Nopage(){
     return(
-        <h1 className="text-2xl text-center bg-yellow-200">No Results Found - 404</h1>
+        <p className="font-bold text-xl text-center sm:text-3xl h-100 bg-yellow-200">No Results Found - 404</p>
     )
 }
