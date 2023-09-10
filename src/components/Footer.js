@@ -1,9 +1,9 @@
 export default function Footer(){
     return(
-        <>
         <div className="mt-auto">
+            <h2 hidden> News Today - Top Headlines & Breaking News</h2>
         <section className="p-5  bg-purple-300">
-            <h3 className="text-lg font-bold">About NewsToday</h3>
+            <div className="text-lg font-bold">About NewsToday</div>
             <p className="text-slate-900 font-serif">Discover "News Today," your ultimate source for top headlines, breaking stories, and in-depth coverage of India and US news. We curate interesting and popular news, ensuring you stay informed with the latest happenings. Our user-friendly interface keeps you connected to trending topics, making us the reliable news source in a competitive digital landscape. Trust "News Today" for a comprehensive news experience that sets us apart from the rest. Stay connected with us and stay ahead of the news curve.</p>
             <p className=" hidden">
             Welcome to News Today, your trusted destination for staying updated with the latest happenings across India and the United States. We understand that in today's fast-paced world, access to reliable news is paramount. That's why we strive to provide you with the most current and captivating news stories right at your fingertips.
@@ -38,6 +38,5 @@ In a world overflowing with information, News Today stands out as your go-to sou
   </div>
         </footer>
         </div>
-        </>
     )
 }
