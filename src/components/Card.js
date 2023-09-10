@@ -4,7 +4,7 @@ export function Card({article}){
      
      return(
          <div className="mx-auto max-w-sm rounded overflow-hidden shadow-lg  hover:shadow-slate-500 hover:ring-1 hover:ring-slate-200">
-             <img className="object-contain w-[384px] h-auto" width='384px' height='256px' src={article.urlToImage} alt={article.title}/>
+             <img className="object-contain w-[384px] h-auto" width='384px' height='256px' src={article.urlToImage} alt={"News Today App - "+article.title}/>
              <a href={article.url}><div className="px-6 py-4">
                 <div className="font-bold text-lg md:text-xl mb-2">{article.title}</div>
                 <p className="text-gray-700 text-base">
