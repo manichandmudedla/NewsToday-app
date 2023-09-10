@@ -10,6 +10,6 @@ export function Category({category,country}){
         
     },[country,category])
     return(
-        <NewsArticle isLoading={isLoading} news={news}/>
+        <NewsArticle heading={'NewsToday - '+category} isLoading={isLoading} news={news}/>
     )
 }

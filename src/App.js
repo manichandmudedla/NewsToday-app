@@ -30,7 +30,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Navbar country={country} setCountry={setCountry} toSearch={toSearch} setSearch={setSearch}/>}>
-          <Route key='home' index element={<NewsArticle isLoading={isLoading} news={news}/>} />
+          <Route key='home' index element={<NewsArticle heading="News Today - Top Headlines" isLoading={isLoading} news={news}/>} />
           {
             newsCategory.map((category)=>{
               return(
